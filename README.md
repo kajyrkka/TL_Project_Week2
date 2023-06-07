@@ -1,43 +1,42 @@
 # TL_Project_Week2
-Telecommunications Project Week 2 Assignments
 
-# WEEK 2 tasks are as follows:
 
-## Task 1 check first Kari's video what kind of functionality should be achieved => video link to be added
+# Viikon perustavoite = Siirrä kiihtyvyysanturin dataa (x,y,z) BLE yhteyden yli puhelimeen.
 
-## Task 2 Compile and flash WorkingADCSolution to nrf5340dk and add accelerator sensor
+## 1. Katso ensin video viikon kokonaistavoitteesta. LINKKI YOUTUBEEN TÄHÄN:
 
-Before actually connecting accelerator sensor verify that ADC works correctly (i.e feed 3.3V to each pins defined below).
-Use pins:
-p0.03 for x acceleration
-p0.04 for y acceleration
-p0.05 for z acceleration
+## 2. Tutustu annettuun ADC ohjelmaan
 
-When you have connected accelartor sensor verify that it gives meaningful results before continuing to task 3.
+Käännä ja flashää repositoryn mukana tuleva WorkingADCSolution nrf5340dk alustalle, tutustu koodiin
+alustan nappien ja ledien toimintaan. Varmista AD-muuntimen oikea toiminta kytkemällä VDD ja GND signaaleja
+alustan pinneihin ohjelman ollessa käynnissä.
 
-## Task 3 Learn how to make a Bluetooth Low Energy connection from nrf5340dk and how to send 3 integer values over BLE.
+p0.03 for x acceleration < br />
+p0.04 for y acceleration < br />
+p0.05 for z acceleration < br />
 
-Register yourself at https://academy.nordicsemi.com/
+Kytke kiintyvyysanturi edellä lueteltuihin pinneihin ja testaa kiihtyvyysanturin toiminta.
 
-Continue Bluetoot Low Energy Fundamentals course were we left at tietoliikenteen perusteet course. I.e. continue from 
-Lesson 4 Data Exchange in Bluetooth Low Energy https://academy.nordicsemi.com/lessons/lesson-4-bluetooth-le-data-exchange/
+## 3. Tee ohjelma, joka lähettää dataa BLE yhteyden yli puhelimeen
 
-Complete Lesson 4 exercise 2. You should now be able to send one integer value over Bluetooth to your mobile phone.
-You must install nrfConnect application to your phone to read messages send from nrf5340dk.
+Tee tunnukset Nordic Academyyn https://academy.nordicsemi.com/, jos sinulla ei niitä jo ole.
 
-Modify now your code in order to send 3 integer values instead of one over Bluetooth. And verify from your mobile that this
-actually happens.
+Jatketaan tai aloitetaan Bluetoot Low Energy (BLE) Fundamentals -kurssi (jota ollaan toivottavasti suoritettu jo johonkin asti
+tietoliikenteen perusteiden kurssilla). Käydään kurssilta läpi Lesson 4 alkuosan teoria ja exercise 1 ja exercise 2. Kun 
+exercise 2 on suoritettu loppuun ohjeiden mukaisesti, niin sinulla pitäisi olla kasassa ohjelma, joka lähettää periodisesti
+integer dataa BLE yhteyden yli (jos puhelimelle asennettu ohjelma nfrConnect yhdistää nrf5340dk laitteeseen ja "tilaa" tiedon).
+https://academy.nordicsemi.com/lessons/lesson-4-bluetooth-le-data-exchange/
 
-## Task 4 Integrate bluetooth transmission and Task2 in order to send x,y,z accerator values and info about sensor orientation
+Muokkaa esimerkin koodia siten, että yhden integer tiedon sijasta BLE yhteyden yli lähetetäänkin 4 tietoa (x,y,z ja suunta). 
 
-Sensor orientation is reported as:
-X-axis up = 0
-X-axis down = 1
+## 4 Integroi nyt kohdan 2 ja 3 ohjelmat
 
-Y-axis up = 2
-Y-axis down = 3
+Lisää kohdassa 2 testaamasi ADC-muuntimen toiminallisuus BLE:n yli lähettävään ohjelmaan (kohta 3). Ota
+käytöön nrf5340dk alustan kaksi nappia. Ensimmäisestä napista voit vaihtaa suunta muuttujan arvoa 0,1,2,3,4,5,0,1,...
+aina nappia painettaessa. Ja toisesta napista laite lähettää 100 kpl x,y,z,suunta tietoja BLE:n yli
 
-Z-axis up = 4
-Z-axis down 5
-Sensor orientation value is selected with nrf5340dk pushButtons Button 0 is used to select orientation
-and Button 1 is used to start a new measurement which measures 100 x,y,z + orientation values and sends those over Bluetooth.
+
+# Viikon ylimääräinen tavoite = BLE low energy fundamentals Lesson 4 loppuun
+
+Toteuta vielä BLE fundamentals kurssin Lesson 4 osan esimerkki 3 ja suorita osan "tentti"
+Näytä todiste läpäistystä testistä ja demo esimerkistä 3.
