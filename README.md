@@ -11,9 +11,9 @@ Käännä ja flashää repositoryn mukana tuleva WorkingADCSolution nrf5340dk al
 alustan nappien ja ledien toimintaan. Varmista AD-muuntimen oikea toiminta kytkemällä VDD ja GND signaaleja
 alustan pinneihin ohjelman ollessa käynnissä.
 
-p0.03 for x acceleration < br />
-p0.04 for y acceleration < br />
-p0.05 for z acceleration < br />
+p0.03 for x acceleration <br />
+p0.04 for y acceleration <br />
+p0.05 for z acceleration <br />
 
 Kytke kiintyvyysanturi edellä lueteltuihin pinneihin ja testaa kiihtyvyysanturin toiminta.
 
