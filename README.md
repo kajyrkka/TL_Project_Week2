@@ -3,7 +3,7 @@
 
 # Viikon perustavoite = Siirrä kiihtyvyysanturin dataa (x,y,z) BLE yhteyden yli puhelimeen.
 
-## 1. Katso ensin video viikon kokonaistavoitteesta. LINKKI YOUTUBEEN TÄHÄN:
+## 1. Katso ensin video viikon kokonaistavoitteesta. https://youtu.be/0WQW8uLjsSg
 
 ## 2. Tutustu annettuun ADC ohjelmaan
 
@@ -11,9 +11,9 @@ Käännä ja flashää repositoryn mukana tuleva WorkingADCSolution nrf5340dk al
 alustan nappien ja ledien toimintaan. Varmista AD-muuntimen oikea toiminta kytkemällä VDD ja GND signaaleja
 alustan pinneihin ohjelman ollessa käynnissä.
 
-p0.03 for x acceleration <br />
-p0.04 for y acceleration <br />
-p0.05 for z acceleration <br />
+p0.03 for x acceleration < br />
+p0.04 for y acceleration < br />
+p0.05 for z acceleration < br />
 
 Kytke kiintyvyysanturi edellä lueteltuihin pinneihin ja testaa kiihtyvyysanturin toiminta.
 
@@ -28,12 +28,15 @@ integer dataa BLE yhteyden yli (jos puhelimelle asennettu ohjelma nfrConnect yhd
 https://academy.nordicsemi.com/lessons/lesson-4-bluetooth-le-data-exchange/
 
 Muokkaa esimerkin koodia siten, että yhden integer tiedon sijasta BLE yhteyden yli lähetetäänkin 4 tietoa (x,y,z ja suunta). 
+Tämä on itse asiassa helppo tehdä siten, että send_data_thread funktiossa my_lbs_sensor_notify funktiota kutsutaan useita
+kertoja, mutta vain eri datalla. 
 
 ## 4 Integroi nyt kohdan 2 ja 3 ohjelmat
 
 Lisää kohdassa 2 testaamasi ADC-muuntimen toiminallisuus BLE:n yli lähettävään ohjelmaan (kohta 3). Ota
-käytöön nrf5340dk alustan kaksi nappia. Ensimmäisestä napista voit vaihtaa suunta muuttujan arvoa 0,1,2,3,4,5,0,1,...
-aina nappia painettaessa. Ja toisesta napista laite lähettää 100 kpl x,y,z,suunta tietoja BLE:n yli
+käytöön nrf5340dk alustasta myös nappi 2 (esimerkkikoodihan käyttää jo nappia 1). Napilla 2 voit vaihtaa
+suunta muuttujan arvoa 0,1,2,3,4,5,0,1,...aina nappia painettaessa. Lähetä BLE yhteyden yli (jos joku
+tilaa sensoriarvon) suuntatieto, x,y,z kiityvyydet.
 
 
 # Viikon ylimääräinen tavoite = BLE low energy fundamentals Lesson 4 loppuun
