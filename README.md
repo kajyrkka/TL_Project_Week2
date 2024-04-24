@@ -3,6 +3,22 @@
 
 # Viikon perustavoite = Siirrä kiihtyvyysanturin dataa (x,y,z) BLE yhteyden yli puhelimeen.
 
+## 0. Scrum tiimin (= 6 työparia) viikon vastuullinen Srum mananageripari pitää daily palaverit
+	  ma-to päivinä klo 9.00 alkaen. Scum manageripari lähettää sähköpostiraportin 
+	  (pohja löytyy Moodlesta) molemmille projektia ohjaaville opettajille päivittäin.
+	  
+	  Perjantaisin viikon vastuullinen Srum manageripari dokumentoi kunkin työparin (6 työparia) viikon
+	  tulokset sprint review dokumenttiin (pohja löytyy Moodlesta) ja tuo dokumentti lähetetäänkin
+	  myös projektia ohjaaville opettajille perjantaiaamulla ennen opettajan viikon katselmointi-
+	  palaveria, missä vaihdetaan myös vastuullinen Srum manageripari seuraavalle viikolle.
+	  
+	  Tutustukaa alla oleviin viikon tehtäviin ja tehkää githubin projektin Kanban tauluun 
+	  suunnitelma, minkälaisissa stepeissä aiotte viikon tehtävät tehdä ja testata. Esimerkiksi
+	  "Tutustu annettuun ADC ohjelmaan" -tehtävästä voisi tulla Kanban tauluun 2 tehtävää: 1) Annettu
+	  ADC ohjelma saadaan todistetusti käännettyä ja ladattua (flash) nrf5340DK alustalle. 2) Kiihtyvyys
+	  anturi on kytketty todistetusti oikein nrf5340DK laitteen pinneihin ja kiihtyvyysanturia kääntelemällä
+	  saadaan järkeviä kiihtyvyyslukemia tulostettua serial monitor työkaluun.
+
 ## 1. Katso ensin video viikon kokonaistavoitteesta. https://youtu.be/0WQW8uLjsSg
 
 ## 2. Tutustu annettuun ADC ohjelmaan
