@@ -3,8 +3,9 @@
 
 # Viikon perustavoite = Siirrä kiihtyvyysanturin dataa (x,y,z) BLE yhteyden yli puhelimeen.
 
-## 0. Scrum tiimin (= 6 työparia) viikon vastuullinen Srum mananageripari pitää daily palaverit
-	  ma-to päivinä klo 9.00 alkaen. Scum manageripari lähettää sähköpostiraportin 
+## 0. Ohjeet Scrum tiimille (= 6 työparia) 
+	  Viikon vastuullinen Srum mananageripari pitää daily palaverit
+	  ma-to päivinä klo 9.00 alkaen. Scum manageripari lähettää sähköpostiraportin daily palaverista
 	  (pohja löytyy Moodlesta) molemmille projektia ohjaaville opettajille päivittäin.
 	  
 	  Perjantaisin viikon vastuullinen Srum manageripari dokumentoi kunkin työparin (6 työparia) viikon
