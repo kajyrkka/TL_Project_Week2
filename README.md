@@ -4,14 +4,13 @@
 # Viikon perustavoite = Siirrä kiihtyvyysanturin dataa (x,y,z) BLE yhteyden yli puhelimeen.
 
 ## 0. Ohjeet Scrum tiimille (= 6 työparia) 
-	  Viikon vastuullinen Srum mananageripari pitää daily palaverit
-	  ma-to päivinä klo 9.00 alkaen. Scum manageripari lähettää sähköpostiraportin daily palaverista
-	  (pohja löytyy Moodlesta) molemmille projektia ohjaaville opettajille päivittäin.
+	  Viikon vastuullinen työpari pitää daily palaverit keskiviikkoisin ja torstaisin.
+	  Scrum-tiimin discord kanavalle raportoidaan daily palaverin tulokset (ketkä paikalla, missä
+	  kukin työpari on menossa ja mahdolliset ongelmat). 
 	  
-	  Perjantaisin viikon vastuullinen Srum manageripari dokumentoi kunkin työparin (6 työparia) viikon
-	  tulokset sprint review dokumenttiin (pohja löytyy Moodlesta) ja tuo dokumentti lähetetäänkin
-	  myös projektia ohjaaville opettajille perjantaiaamulla ennen opettajan viikon katselmointi-
-	  palaveria, missä vaihdetaan myös vastuullinen Srum manageripari seuraavalle viikolle.
+	  Viikon vastuullinen työpari järjestää perjantaisin sprint review palaverin Scrum tiimille
+	  ja koostaa Scrum-tiimin discord kanavalle raportin viikon tuloksista kunkin työparin osalta.
+	  Raportissa kerrotaan myös mikä on seuraavan viikon vastuullinen pari.
 	  
 	  Tutustukaa alla oleviin viikon tehtäviin ja tehkää githubin projektin Kanban tauluun 
 	  suunnitelma, minkälaisissa stepeissä aiotte viikon tehtävät tehdä ja testata. Esimerkiksi
@@ -56,7 +55,7 @@ suunta muuttujan arvoa 0,1,2,3,4,5,0,1,...aina nappia painettaessa. Lähetä BLE
 tilaa sensoriarvon) suuntatieto, x,y,z kiityvyydet.
 
 
-# Viikon ylimääräinen tavoite = BLE low energy fundamentals Lesson 4 loppuun
+# Viikon ylimääräinen tavoite = BLE low energy fundamentals kurssin sertifikaatti
 
-Toteuta vielä BLE fundamentals kurssin Lesson 4 osan esimerkki 3 ja suorita osan "tentti"
-Näytä todiste läpäistystä testistä ja demo esimerkistä 3.
+Suorita Nordic Academyn Bluetooth Low Energy Fundamentals kurssi loppuun asti ja näytä todisteeksi suoritukseta saamasi sertifikaatti.
+
