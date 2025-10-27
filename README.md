@@ -1,61 +1,123 @@
-# TL_Project_Week2
+# 🧩 TL_Project_Week2
 
+## 🎯 Viikon perustavoite
+- Siirrä kiihtyvyysanturin data (x, y, z) Bluetooth Low Energy (BLE) -yhteyden yli puhelimeen tai tietokoneeseen.  
+- Suorita **Nordic Academy – Bluetooth Fundamentals** -kurssi ja esitä hyväksytty sertifikaatti ohjaavalle opettajalle.
 
-# Viikon perustavoite = Siirrä kiihtyvyysanturin dataa (x,y,z) BLE yhteyden yli puhelimeen.
+---
 
-## 0. Ohjeet Scrum tiimille (= 6 työparia) 
-	  Viikon vastuullinen työpari pitää daily palaverit keskiviikkoisin ja torstaisin.
-	  Scrum-tiimin discord kanavalle raportoidaan daily palaverin tulokset (ketkä paikalla, missä
-	  kukin työpari on menossa ja mahdolliset ongelmat). 
-	  
-	  Viikon vastuullinen työpari järjestää perjantaisin sprint review palaverin Scrum tiimille
-	  ja koostaa Scrum-tiimin discord kanavalle raportin viikon tuloksista kunkin työparin osalta.
-	  Raportissa kerrotaan myös mikä on seuraavan viikon vastuullinen pari.
-	  
-	  Tutustukaa alla oleviin viikon tehtäviin ja tehkää githubin projektin Kanban tauluun 
-	  suunnitelma, minkälaisissa stepeissä aiotte viikon tehtävät tehdä ja testata. Esimerkiksi
-	  "Tutustu annettuun ADC ohjelmaan" -tehtävästä voisi tulla Kanban tauluun 2 tehtävää: 1) Annettu
-	  ADC ohjelma saadaan todistetusti käännettyä ja ladattua (flash) nrf5340DK alustalle. 2) Kiihtyvyys
-	  anturi on kytketty todistetusti oikein nrf5340DK laitteen pinneihin ja kiihtyvyysanturia kääntelemällä
-	  saadaan järkeviä kiihtyvyyslukemia tulostettua serial monitor työkaluun.
+## ⚙️ 0. Scrum-tiimin ohjeet
 
-## 1. Katso ensin video viikon kokonaistavoitteesta. https://youtu.be/0WQW8uLjsSg
+Tiimi koostuu **6 työparista**.  
 
-## 2. Tutustu annettuun ADC ohjelmaan
+### Viikon vastuullisen työparin tehtävät
+- Järjestää **daily-palaverit keskiviikkoisin ja torstaisin**  
+- Raportoi Scrum-tiimin **Discord-kanavalle**:
+  - Ketkä olivat paikalla  
+  - Kunkin työparin eteneminen  
+  - Mahdolliset ongelmat  
+- Järjestää **sprint review -palaverin perjantaina**  
+- Julkaisee yhteenvedon Discordiin  
+- Nimeää seuraavan viikon vastuullisen työparin  
 
-Käännä ja flashää repositoryn mukana tuleva WorkingADCSolution nrf5340dk alustalle, tutustu koodiin
-alustan nappien ja ledien toimintaan. Varmista AD-muuntimen oikea toiminta kytkemällä VDD ja GND signaaleja
-alustan pinneihin ohjelman ollessa käynnissä.
+### Kanban-suunnitelma
+Laadi GitHubin **Kanban-tauluun** suunnitelma viikon tehtävien vaiheista ja testauksesta.
 
-p0.03 for x acceleration < br />
-p0.04 for y acceleration < br />
-p0.05 for z acceleration < br />
+**Esimerkki:**
+1. Käännä ja flashää *WorkingADCSolution* nrf5340DK-alustalle.  
+2. Testaa kiihtyvyysanturi kääntämällä laitetta ja seuraa lukemia serial monitorissa.
 
-Kytke kiintyvyysanturi edellä lueteltuihin pinneihin ja testaa kiihtyvyysanturin toiminta.
+---
 
-## 3. Tee ohjelma, joka lähettää dataa BLE yhteyden yli puhelimeen
+## 🎥 1. Video: Viikon kokonaiskuva (ei sisällä uutta lisätavoitetta!)
+👉 [Katso video YouTubessa](https://youtu.be/0WQW8uLjsSg)
 
-Tee tunnukset Nordic Academyyn https://academy.nordicsemi.com/, jos sinulla ei niitä jo ole.
+---
 
-Jatketaan tai aloitetaan Bluetoot Low Energy (BLE) Fundamentals -kurssi (jota ollaan toivottavasti suoritettu jo johonkin asti
-tietoliikenteen perusteiden kurssilla). Käydään kurssilta läpi Lesson 4 alkuosan teoria ja exercise 1 ja exercise 2. Kun 
-exercise 2 on suoritettu loppuun ohjeiden mukaisesti, niin sinulla pitäisi olla kasassa ohjelma, joka lähettää periodisesti
-integer dataa BLE yhteyden yli (jos puhelimelle asennettu ohjelma nfrConnect yhdistää nrf5340dk laitteeseen ja "tilaa" tiedon).
-https://academy.nordicsemi.com/lessons/lesson-4-bluetooth-le-data-exchange/
+## 🔌 2. ADC-ohjelmaan tutustuminen
 
-Muokkaa esimerkin koodia siten, että yhden integer tiedon sijasta BLE yhteyden yli lähetetäänkin 4 tietoa (x,y,z ja suunta). 
-Tämä on itse asiassa helppo tehdä siten, että send_data_thread funktiossa my_lbs_sensor_notify funktiota kutsutaan useita
-kertoja, mutta vain eri datalla. 
+1. Käännä ja flashää repositoryn mukana tuleva **WorkingADCSolution** nrf5340DK-alustalle.  
+2. Tutustu koodiin sekä nappien ja LEDien toimintaan.  
+3. Testaa AD-muuntimen toiminta kytkemällä **VDD** ja **GND** signaaleja alustan pinneihin ohjelman ollessa käynnissä.
 
-## 4 Integroi nyt kohdan 2 ja 3 ohjelmat
+| Signaali       | nrf5340DK pinni |
+|----------------|-----------------|
+| X-kiihtyvyys   | p0.03 |
+| Y-kiihtyvyys   | p0.04 |
+| Z-kiihtyvyys   | p0.05 |
 
-Lisää kohdassa 2 testaamasi ADC-muuntimen toiminallisuus BLE:n yli lähettävään ohjelmaan (kohta 3). Ota
-käytöön nrf5340dk alustasta myös nappi 2 (esimerkkikoodihan käyttää jo nappia 1). Napilla 2 voit vaihtaa
-suunta muuttujan arvoa 0,1,2,3,4,5,0,1,...aina nappia painettaessa. Lähetä BLE yhteyden yli (jos joku
-tilaa sensoriarvon) suuntatieto, x,y,z kiityvyydet.
+🔧 Kytke kiihtyvyysanturi pinneihin ja varmista, että sarjaporttiin tulostuu järkeviä arvoja, kun anturia kääntelee.
 
+---
 
-# Viikon ylimääräinen tavoite = BLE low energy fundamentals kurssin sertifikaatti
+## 📡 3. Datan lähettäminen BLE:n yli
 
-Suorita Nordic Academyn Bluetooth Low Energy Fundamentals kurssi loppuun asti ja näytä todisteeksi suoritukseta saamasi sertifikaatti.
+1. Luo tunnukset **[Nordic Academyyn](https://academy.nordicsemi.com/)**, jos sinulla ei vielä ole niitä.  
+2. Suorita **Bluetooth Low Energy Fundamentals** -kurssi, vähintään Lesson 4 (teoria + Exercises 1–2).  
+3. Exercise 2:n jälkeen sinulla on ohjelma, joka lähettää *integer*-datan BLE:n yli, kun **nRF Connect** -sovellus tilaa sen.  
 
+### 🔧 Muokkaa ohjelmaa
+Lähetä yhden *integer*-arvon sijasta **neljä arvoa**:
+- X, Y ja Z kiihtyvyydet  
+- Suunta (0–5)
+
+Voit toteuttaa tämän kutsumalla `my_lbs_sensor_notify()` -funktiota useita kertoja eri datalla `send_data_thread`-funktiossa.
+
+---
+
+## 🔄 4. ADC + BLE -integraatio
+
+Yhdistä kohdan 2 ADC-ohjelma ja kohdan 3 BLE-ohjelma.
+
+- Ota käyttöön **nappi 2**, jolla voit vaihtaa *suunta*-muuttujan arvoa 0 → 1 → 2 → 3 → 4 → 5 → 0...  
+- Lähetä BLE:n yli (jos yhteys on tilattu) seuraavat arvot:
+  - **Suunta**, **X**, **Y** ja **Z** kiihtyvyydet.
+
+---
+
+## 🏅 5. Sertifikaatti
+
+Suorita **Bluetooth Low Energy Fundamentals** -kurssi loppuun ja näytä sertifikaatti ohjaavalle opettajalle.
+
+💡 Vinkkejä:
+- Voit käyttää valmiita *solution*-versioita nopeuttaaksesi työskentelyä.  
+- Varmista, että:
+  - olet kääntänyt ja flashännyt kaikki esimerkkikoodit,  
+  - testannut ne nrf5340DK-laitteessa,  
+  - suorittanut kaikki **QUIZ**-osat hyväksytysti.
+
+---
+
+# 🧠 Viikon 2 – Lisätehtävät (valinnaiset)
+
+### 1️⃣ Datan keruu
+Toteuta ohjelma, joka kerää kiihtyvyysanturista **1 sekunnin ajan X, Y, Z -arvoja** valitsemallasi näytetaajuudella.
+
+### 2️⃣ Datan lähetys BLE:n yli
+Toteuta ohjelma, joka lähettää **1 sekunnin ajalta kerätyt X, Y, Z -arvot ja label-tiedot** langattomasti BLE:n yli tietokoneelle.
+
+### 3️⃣ Sovellusidea ja datan hyödyntäminen
+Suunnittele, miten aiot hyödyntää kiihtyvyysanturidataa.  
+Tulevina viikkoina dataa käytetään konvoluutioneuroverkon (CNN) opettamiseen, joka tunnistaa liikkeen tiloja spektrogrammikuvista.
+
+**Esimerkki labeloinneista:**
+| Label | Tila |
+|--------|------|
+| 0 | Laite paikallaan |
+| 1 | Laite liikkeessä |
+| 2 | Laite kiihtyy voimakkaasti |
+
+Esitä sovelluksen idea ja datankeruusuunnitelma ohjaavalle opettajalle.
+
+---
+
+## 📋 Yhteenveto
+
+✅ Siirrä kiihtyvyysdata BLE:n yli  
+✅ Suorita BLE Fundamentals -kurssi ja esitä sertifikaatti  
+✅ Harjoittele Scrum-työskentelyä ja raportointia  
+✅ (Valinnaisesti) kehitä oma BLE-pohjainen data-analyysisovellus
+
+---
+
+**Hyvää koodausta ja tutkimusmielistä asennetta! 💪**
