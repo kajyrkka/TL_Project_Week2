@@ -54,7 +54,8 @@ Laadi GitHubin **Kanban-tauluun** suunnitelma viikon tehtävien vaiheista ja tes
 
 1. Luo tunnukset **[Nordic Academyyn](https://academy.nordicsemi.com/)**, jos sinulla ei vielä ole niitä.  
 2. Suorita **Bluetooth Low Energy Fundamentals** -kurssi, vähintään Lesson 4 (teoria + Exercises 1–2).  
-3. Exercise 2:n jälkeen sinulla on ohjelma, joka lähettää *integer*-datan BLE:n yli, kun **nRF Connect** -sovellus tilaa sen.  
+3. Asenna omaan puhelimeesi **nRF Connect** ohjelma ja opettele käyttämään sitä.
+4. Exercise 2:n jälkeen sinulla on ohjelma, joka lähettää *integer*-datan BLE:n yli, kun **nRF Connect** -sovellus tilaa sen.  
 
 ### 🔧 Muokkaa ohjelmaa
 Lähetä yhden *integer*-arvon sijasta **neljä arvoa**:
@@ -95,6 +96,8 @@ Toteuta ohjelma, joka kerää kiihtyvyysanturista **1 sekunnin ajan X, Y, Z -arv
 
 ### 2️⃣ Datan lähetys BLE:n yli
 Toteuta ohjelma, joka lähettää **1 sekunnin ajalta kerätyt X, Y, Z -arvot ja label-tiedot** langattomasti BLE:n yli tietokoneelle.
+Toteuta läppärillesi Python ohjelma, jolla saat vastaanotettua label tiedon ja 1 sekunnin mittaisen kiihtyvyysanturidatan. Käytä
+Bleak Python kirjastoa https://bleak.readthedocs.io/_/downloads/en/develop/pdf/ hyväksesi.
 
 ### 3️⃣ Sovellusidea ja datan hyödyntäminen
 Suunnittele, miten aiot hyödyntää kiihtyvyysanturidataa.  
