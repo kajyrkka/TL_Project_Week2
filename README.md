@@ -3,9 +3,9 @@
 
 ## 1. Viikon 2 tavoite (arvosana max 3)
 
-### 1.1 Siirrä kiihtyvyysanturin data (x, y, z) Bluetooth Low Energy (BLE) -yhteyden yli puhelimeen tai tietokoneeseen. 
+1.1 Siirrä kiihtyvyysanturin data (x, y, z) Bluetooth Low Energy (BLE) -yhteyden yli puhelimeen tai tietokoneeseen. 
 
-### 1.2 Suorita **Nordic Academy – Bluetooth Fundamentals** -kurssi ja esitä hyväksytty sertifikaatti ohjaavalle opettajalle.
+1.2 Suorita **Nordic Academy – Bluetooth Fundamentals** -kurssi ja esitä hyväksytty sertifikaatti ohjaavalle opettajalle.
 
 
 
