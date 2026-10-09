@@ -17,9 +17,9 @@
 
 | Signaali       | nrf5340DK pinni |
 |----------------|-----------------|
-| X-kiihtyvyys   | p0.03 |
-| Y-kiihtyvyys   | p0.04 |
-| Z-kiihtyvyys   | p0.05 |
+| X-kiihtyvyys   | p0.04 |
+| Y-kiihtyvyys   | p0.05 |
+| Z-kiihtyvyys   | p0.06 |
 
 4. Kytke lopuksi kiihtyvyysanturi pinneihin ja varmista, että sarjaporttiin tulostuu järkeviä arvoja (=se suunta, joka kertoo maan vetovoiman aiheuttaman kiihtyvyyden on suurin), kun anturia kääntelee.
 
