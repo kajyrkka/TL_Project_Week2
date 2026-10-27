@@ -81,9 +81,9 @@ Toteuta ohjelma, joka kerää kiihtyvyysanturista **1 sekunnin ajan X, Y, Z -arv
 
 ### 2.3 Datan lähetys BLE:n yli
 
-Toteuta ohjelma, joka lähettää **1 sekunnin ajalta kerätyt X, Y, Z -arvot langattomasti BLE:n yli tietokoneelle. Label tietoa sinun ei välttämättä tarvitse lähettää jos datan keräysvaiheessa keräät 1 sekunnin mittaiset kiihtyvyystiedostot samankaltaisesta ilmiöstä samaan hakemistoon ja toisenlaisen ilmiön tiedostot toiseen hakemistoon. Datasets-kirjastossa oli funktio jolla opetusdata voitiin helposti labeloida ja jakaa opetus ja validation dataan jos datat ovat tiedostoina eri hakemistoissa.
+Toteuta ohjelma, joka lähettää 1 sekunnin ajalta kerätyt X, Y, Z -arvot langattomasti BLE:n yli tietokoneelle. Label tietoa sinun ei välttämättä tarvitse lähettää jos datan keräysvaiheessa keräät 1 sekunnin mittaiset kiihtyvyystiedostot samankaltaisesta ilmiöstä samaan hakemistoon ja toisenlaisen ilmiön tiedostot toiseen hakemistoon. Datasets-kirjastossa oli funktio jolla opetusdata voitiin helposti labeloida ja jakaa opetus ja validation dataan jos datat ovat tiedostoina eri hakemistoissa.
 
-Toteuta läppärillesi Python ohjelma, jolla saat vastaanotettua 1 sekunnin mittaisen kiihtyvyysanturidatan ja talletettua datan tiedostoon. Käytä Bleak Python kirjastoa https://bleak.readthedocs.io/_/downloads/en/develop/pdf/ hyväksesi.
+Toteuta läppärillesi Python ohjelma, jolla saat vastaanotettua 1 sekunnin mittaisen kiihtyvyysanturidatan ja talletettua datan tiedostoon. Käytä Bleak Python kirjastoa https://bleak.readthedocs.io/_/downloads/en/develop/pdf/ hyväksesi, jos siirrät datan Nordicin alustalta bluetooth yhteyden yli. Toinen vaihtoehto on siirtää data sarjaliikenneväylän kautta. HUOM: tämän viikon tehtävässä riittää, että olet saanut tehtyä datankeräys ohjelmiston Nordicille C:llä ja läppärillesi Pythonilla. Data koneoppimisalgoritmin opettamista varten kerätään vasta viikolla 5.
 
 
 
