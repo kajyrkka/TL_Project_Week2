@@ -44,7 +44,7 @@ Yhdistä edellä testattu ADC-ohjelma ja BLE-ohjelma. Yhdistäminen kannattaa te
 - Muokkaa yhdistettyä ohjelmaa ottamalla käyttöön **nappi 2**. Nappia 2 käytetään *suunta*-muuttujan arvon muuttamiseen seuraavasti 0  → 1 → 2 → 3 → 4 → 5 → 0...  
 - Muokkaa Bluetooth lähetystä siten, että lähetetään seuraavat arvot:
   **Suunta**, **X**, **Y** ja **Z** kiihtyvyydet.
-- Muokkaa yhdistettyä ohjelmaa ottamalla käytöön **nappi 3**. Nappia 3 käytetään 100 peräkkäisen mittauksen tekemiseen jostain tietystä suunnasta. Ensin valitaan suunta napilla 2 ja tämän jälkeen nappia 3 painamalla laite tekee 100 kpl x,y,z mittauksia ja lähettää bluetooth radion yli viestin, joka sisältää: valittuSuunta, x,y,z 100 kertaa. Tätä ohjelman ominaisuutta hyödynnetään myöhemmin datan keräykseen, kun Raspberry Pi:lle on saatu tehtyä ohjelma, joka vastaanottaa bluetooth viestit ja lähettää vastaanottamansa datat tietokantaan.
+- Toteuttamaasi ohjelmaa voidaan nyt hyödyntää kiihtyvyysanturidatan keräykseen, kun Raspberry Pi:lle tehty Python ohjelma yhdistää laitteeseesi ja tilaa muokkaamasi Bluetooth lähetyksen
 
 
 
